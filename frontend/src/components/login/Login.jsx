@@ -12,7 +12,20 @@ const Login = ({history}) => {
             .createUserWithEmailAndPassword(email.value, password.value);
           history.push("/");
         } catch (error) {
-          alert(error);
+          if(error.message === "The email address is already in use by another account."){
+            try{
+              await app
+                .auth()
+                .signInWithEmailAndPassword(email.value, password.value);
+              history.push("/");
+            }
+            catch (err){
+              alert(err);
+            }
+          }
+          else {
+            alert(error);
+          }
         }
       }, [history]);
     return (
