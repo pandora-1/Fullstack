@@ -3,7 +3,7 @@ import React from 'react'
 export const Login = () => {
     return (
         <div className="container">
-            <h2>Login</h2>
+            <h2 style={{padding:"0.5em 0 0 0"}}>Login</h2>
             <div className="bg-light container" style={{margin:"3% auto",height:"70vh"}}>
                 <form style={{maxWidth:"80%",margin:"0 auto",padding:"5em 0"}}>
                 <div class="form-group">
