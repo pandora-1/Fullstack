@@ -17,8 +17,8 @@ function App() {
         <Router>
           <Navbar/>
             <PrivateRoute exact path="/" component={Home}/>
+            <PrivateRoute exact path="/history" component={History}/>
             <Route exact path="/login" component={Login}/>
-            <Route exact path="/history" component={History}/>
         </Router>
       </AuthProvider>
     </div>
