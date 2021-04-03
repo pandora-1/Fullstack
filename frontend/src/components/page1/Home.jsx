@@ -7,6 +7,7 @@ const Home = () => {
     
     
     {/* Mulai navbar disini */}
+    {/* Mulai navbar disini */}
       <nav class="navbar navbar-expand-md navbar-light bg-light">
     <a class="navbar-brand ml-5" href="/#">Tubes</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
